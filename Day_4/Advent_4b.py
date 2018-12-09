@@ -70,7 +70,7 @@ def parse_instruction(instruction):
     return guard_id, minute, action
 
 
-def get_overlap(instructions):
+def get_guard_sleep_checksum(instructions):
     guard_handler = GuardHandler()
     for instruction in sorted(instructions):
         guard_id, minute, action = parse_instruction(instruction)
@@ -82,4 +82,4 @@ def get_overlap(instructions):
 
 if __name__ == "__main__":
     instructions = open(sys.argv[1]).read().splitlines()
-    print("Result: {0}".format(get_overlap(instructions)))
+    print("Result: {0}".format(get_guard_sleep_checksum(instructions)))
