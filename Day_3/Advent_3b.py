@@ -69,8 +69,6 @@ class SectorHandler(object):
             self.overlapped_claims.append(new_unique_claim)
 
     def get_unique_claim_ID(self):
-        for b in self.unique_claims:
-            print(b.get_claim_id(), b.get_x_range(), b.get_y_range())
         return self.unique_claims[0].get_claim_id()
 
 
