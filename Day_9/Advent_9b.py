@@ -61,4 +61,4 @@ def get_score(players, final_marble_value):
 
 
 if __name__ == "__main__":
-    print("Winning score: {0}".format(get_score(439, 71307)))
+    print("Winning score: {0}".format(get_score(439, 7130700)))
